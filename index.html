@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="WebApp">
+<head> 
+<meta charset="utf-8"> 
+<title>ALAT 2019</title> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes">  
+<meta name="description" content="12 Congreso  de la Asociación Latinoamericana de Tórax (ALAT), que se llevará a cabo del 3 al 6 de julio de 2019. Dirigida a las enfermedades respiratorias. Es una asociación comprometida con la prevención y el tratamiento de las enfermedades respiratorias a través de la investigación, de la educación, de los cuidados y de la defensa de los pacientes. Tiene como objetivo coordinar y trabajar recíprocamente con otras organizaciones nacionales e internacionales que tengan los mismos fines, con el propósito de disminuir la morbilidad y la mortalidad secundarios a las enfermedades respiratorias en personas de todas las edades. ">
+<meta name="keywords" content="ALAT, ALAT 2019, asocación, latinoamericana, tórax, cirugía, neumología, EPOC, asma, torácica, cuidado, respiratorio, pulmón, intersticiales, imágenez, sueño, tabaquismo, tuberculosis, panamá, julio, 2019, especialistas">
+<meta name="author" content="https://www.btcamericas.com">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i%7CPoppins:300,400,500,600,700" rel="stylesheet">
+<!-- Bootstrap -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<!--<img src="images/mailings/aloft.jpg"
+ Font-Awesome -->
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+<!-- Style -->
+<link href="assets/css/style.css" rel="stylesheet">
+<!-- Responsive -->
+<link href="assets/css/responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body ng-controller="translate">
+<div class="box-layout">
+  <header>
+    <nav class="main-menu menu-fixed">
+      <div class="container"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="#!"><img src="images/logo-ALAT-menu.png" alt="logo" width="90px;"></a> </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="page-scroll" href="#bienvenida">{{Lang.menu001}}</a></li>
+            <li><a class="page-scroll" href="#directiva">{{Lang.menu002}}</a></li>
+            <li><a class="page-scroll" href="#directores">{{Lang.menu003}}</a></li>
+			  <li><a class="page-scroll" href="#comite">COMITÉ</a></li>
+            <li><a href="https://www.eventgo.com.ar/ALAT2019/ProgramaWEB.dll/?e=12&l=ES&d=1" target="_blank" >{{Lang.menu004}}</a></li>
+            <li><a class="page-scroll" href="#registro">{{Lang.menu005}}</a></li>
+            <li><a class="page-scroll" href="#tCientificos">TRABAJOS CIENTíFICOS</a></li>
+            <li><a class="page-scroll" href="#hospedaje">{{Lang.menu006}}</a></li>
+            <li><a class="page-scroll" href="#sede">{{Lang.menu007}}</a></li>
+            <li><a class="page-scroll" href="#tour">{{Lang.menu008}}</a></li>
+            <li><a class="page-scroll" href="#expo" data-toggle="tooltip" data-placement="bottom" title="PRÓXIMAMENTE">{{Lang.menu009}}</a></li>
+            <li><a class="page-scroll" href="#contacto">{{Lang.menu010}}</a></li>
+            <li><a href="#!" ng-click="TxtLang('Es')">ESP</a></li>
+            <li><a href="#!" ng-click="TxtLang('Pt')">PORT</a></li>
+          </ul>
+        </div>
+        <div class="derecha"> </div>
+        <!-- /.navbar-collapse --> 
+      </div>
+      <!-- /.container --> 
+    </nav>
+  </header>
+  <section class="banner">
+    <div class="banner-overlay">
+      <div class="banner-content">
+        <div class="content-left"> 
+          <!--<span class="counter" data-count="3">0</span>-->
+          <p>
+            <button class="btn btcGRANT02" data-toggle="modal" data-target="#myModal"><img src="images/btc-grant02.png" width="80" alt="alat"></button>
+            {{Lang.home01}}</p>
+        </div>
+        <div class="content-right">
+          <div class="content"> <img src="images/image_HOME.png" class="img-responsive" alt="Logotipo 12° Congreso ALAT" width="620px">
+            <ul>
+              <li><span class="flaticon-tool"></span>{{Lang.home02}}</li>
+              <li><span class="flaticon-signs"></span>{{Lang.home03}}</li>
+            </ul>
+            <ul id="countdown" class="countdown">
+              <li class="clock-item"> <span class="count-number days">00</span>
+                <p class="days_text count-text">Days</p>
+              </li>
+              <li class="clock-item"> <span class="count-number hours">00</span>
+                <p class="hours_text count-text">Hours</p>
+              </li>
+              <li class="clock-item"> <span class="count-number minutes">00</span>
+                <p class="minutes_text count-text">Min</p>
+              </li>
+              <li class="clock-item"> <span class="count-number seconds">00</span>
+                <p class="seconds_text count-text">Sec</p>
+              </li>
+            </ul>
+            <!--<a href="#" class="banner-button default-button">booking now</a>--> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+				<a href="" target="_blank"><img src="images/pleca-alat.jpg" alt="logo" class="img-responsive"></a>
+  <section class="about padding-120" id="bienvenida">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-xs-12"> <span class="imgFirma"><img src="images/speakers/Dra_Lorena_Noriega02.jpg" alt="Dra. Lorena Noriega" class="center-block"></span> </div>
+        <div class="col-md-10 col-xs-12">
+          <div class="section-header text-center" style="padding-bottom: 20px;">
+            <h3 class="lightBlue">{{Lang.menu001}}</h3>
+          </div>
+          <div class="col-xs-12 cuerpo">
+            <p ng-bind-html="Lang.wel01"></p>
+            <p>{{Lang.wel02}}</p>
+            <p>{{Lang.wel03}}</p>
+            <p>{{Lang.wel04}}</p>
+            <p>{{Lang.wel05}}</p>
+            <p>{{Lang.wel06}} <b>#ALATPanamá2019</b></p>
+          </div>
+          <div class="col-xs-12 firma">
+            <div class="firmaSVG"> <img src="images/speakers/firmaPresidenta.svg" alt="firma Dra. Lorena Noriega" width="150px;" class="center-block"> </div>
+            <div class="textoFirma text-center">
+              <p>Dra. Lorena I. Noriega A.</p>
+              <p>{{Lang.wel07}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 40px;">
+        <div class="col-md-2 col-xs-12"> <span class="imgFirma"><img src="images/speakers/Dr_Gustavo_Zabert.jpg" alt="Dr. Gustavo E. Zabet" class="center-block"></span> </div>
+        <div class="col-md-10 col-xs-12">
+          <div class="col-xs-12 cuerpo">
+            <p>{{Lang.wel08}}</p>
+            <p ng-bind-html="Lang.wel09">s</p>
+            <p ng-bind-html="Lang.wel010"></p>
+            <p>{{Lang.wel011}}</p>
+            <p ng-bind-html="Lang.wel012"></p>
+            <p>{{Lang.wel013}}</p>
+            <p ng-bind-html="Lang.wel014"></p>
+            <p>{{Lang.wel015}}</p>
+          </div>
+          <div class="col-xs-12 firma">
+            <div class="firmaSVG"> <img src="images/speakers/firmaPresidente.svg" alt="firma Dr. Gustavo E. Zabert" width="150px;" class="center-block"> </div>
+            <div class="textoFirma text-center">
+              <p>Dr. Gustavo E. Zabert.</p>
+              <p>{{Lang.wel016}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- BIENVENIDA end here --> 
+  <!-- DIRECTIVA start here -->
+  <section class="speakers" id="directiva">
+    <div class="overlay">
+      <div class="container">
+        <div class="section-header text-center">
+          <h3>{{Lang.consejoHeader}}</h3>
+        </div>
+        <div class="speaker-items">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="speaker-item">
+                <div class="speaker-image"> <img src="images/speakers/Dr_Gustavo_Zabert.jpg" alt="Prof. Dr. Gustavo E. Zabert" class="img-responsive"> </div>
+                <div class="speaker-content">
+                  <div class="details text-center">
+                    <h4><a href="#">Prof. Dr. Gustavo E. Zabert</a></h4>
+                    <span><small>{{Lang.consejoCD01}}</small></span> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="speaker-item">
+                <div class="speaker-image"> <img src="images/speakers/Dr_Francisco_Arancimbia.jpg" alt="Dr. Fco. Arancibia Hernández" class="img-responsive"> </div>
+                <div class="speaker-content">
+                  <div class="details text-center">
+                    <h4><a href="#">Dr. Fco. Arancibia Hernández</a></h4>
+                    <span><small>{{Lang.consejoCD02}}</small></span> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="speaker-item">
+                <div class="speaker-image"> <img src="images/speakers/Dr_Miguel_Angel_Bergna.jpg" alt="Dr. Miguel Angel Bergna" class="img-responsive"> </div>
+                <div class="speaker-content">
+                  <div class="details text-center">
+                    <h4><a href="#">Dr. Miguel Angel Bergna</a></h4>
+                    <span><small>{{Lang.consejoCD03}}</small></span> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="speaker-item">
+                <div class="speaker-image"> <img src="images/speakers/Dr_Mark_Cohen.jpg" alt="Dr. Mark Cohen" class="img-responsive"> </div>
+                <div class="speaker-content">
+                  <div class="details text-center" style="height: 90px; padding-top: 25px !important; ">
+                    <h4><a href="#">Dr. Mark Cohen</a></h4>
+                    <span><small>{{Lang.consejoCD04}}</small></span> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 col-md-push-4">
+              <div class="speaker-item">
+                <div class="speaker-image"> <img src="images/speakers/Dra_Lorena_Noriega02.jpg" alt="Dra. Lorena I. Noriega A." class="img-responsive"> </div>
+                <div class="speaker-content">
+                  <div class="details text-center">
+                    <h4><a href="#">Dra. Lorena I. Noriega A.</a></h4>
+                    <span><small>{{Lang.consejoCD05}}</small></span> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- DIRECTIVA end here --> 
+  <!--Deptos. Doctores-->
+  <section class="schedules padding-120" id="directores">
+    <div class="container">
+      <div class="section-header text-center">
+        <h3 class="lightBlue">{{Lang.directoresHeader}}</h3>
+      </div>
+      <div class="speaker-items">
+        <div class="row">
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="speaker-item">
+              <div class="speaker-image"> <img src="images/speakers/Dr_Gabriel_Garcia.jpg" alt="Dr. Gabriel García" class="img-responsive"> </div>
+              <div class="speaker-content">
+                <div class="details text-center">
+                  <h6>Dr. Gabriel García</h6>
+                  <span><small>{{Lang.directoresC01}}</small></span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="speaker-item">
+              <div class="speaker-image"> <img src="images/speakers/Dr_Efren_Martinez.jpg" alt="Dr. Efrén Santos" class="img-responsive"> </div>
+              <div class="speaker-content">
+                <div class="details text-center">
+                  <h6>Dr. Efrén Santos</h6>
+                  <span><small>{{Lang.directoresC02}}</small></span> </div>
+              </div>
+            </div>
+          </div>
+          <!--<div class="col-md-2 col-sm-6 col-xs-12">
+                            <div class="speaker-item">
+                                <div class="speaker-image">
+                                    <img src="images/speakers/Dr_Jose_Mier.jpg" alt="Dr. José Mier" class="img-responsive">
+                                </div>
+                                <div class="speaker-content">
+                                    <div class="details text-center">
+                                        <h6>Dr. José Manuel Mier Odriozola</h6>
+                                        <span><small>{{Lang.directoresC03}}</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="speaker-item">
+              <div class="speaker-image"> <img src="images/speakers/Dr_Rodrigo_Torres.jpg" alt="Dr. Rodrigo Torrres" class="img-responsive"> </div>
+              <div class="speaker-content">
+                <div class="details text-center">
+                  <h6>Dr. Rodrigo Torrres</h6>
+                  <span><small>{{Lang.directoresC04}}</small></span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="speaker-item">
+              <div class="speaker-image"> <img src="images/speakers/Dr_Fernandez_Bussy.jpg" alt="Dr. Sebastián Fernández Bussy" class="img-responsive"> </div>
+              <div class="speaker-content">
+                <div class="details text-center">
+                  <h6>Dr. Sebastián Fernández Bussy</h6>
+                  <span><small>{{Lang.directoresC05}}</small></span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="speaker-item">
+              <div class="speaker-image"> <img src="images/speakers/Dr_Carlos_M_Luna.jpg" alt="Dr. Carlos M. Luna" class="img-responsive"> </div>
+              <div class="speaker-content">
+                <div class="details text-center">
+                  <h6>Dr. Carlos M. Luna</h6>
+                  <span><small>{{Lang.directoresC06}}</small></span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="speaker-item">
+              <div class="speaker-image"> <img src="images/speakers/Dr_Fabian_Caro.jpg" alt="Dr. Fabián Caro" class="img-responsive"> </div>
+              <div class="speaker-content">
+                <div class="details text-center">
+                  <h6>Dr. Fabián Caro</h6>
+                  <span><small >{{Lang.directoresC07}}</small></span> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="speaker-item">
+              <div class="speaker-image"> <img src="images/speakers/Dra_Alejandra_Rey.jpg" alt="Dra. María Laucho Contreras" class="img-responsive"> </div>
+              <div class="speaker-content">
+                <div class="details text-center">
+                  <h6>Dra. Alejandra Rey</h6>
+                  <span><small>{{Lang.directoresC08}}</small></span> </div>
+              </div>
+            </div>
+          </div>
+          <!--<div class="col-md-2 col-sm-6 col-xs-12">
+                            <div class="speaker-item">
+                                <div class="speaker-image">
+                                    <img src="images/speakers/dra_GEN.jpg" alt="Dra. Cecilia Rodríguez " class="img-responsive">
+                                </div>
+                                <div class="speaker-content">
+                                    <div class="details text-center">
+                                        <h6>Dra. Cecilia Rodríguez </h6>
+                                        <span><small>{{Lang.directoresC09}}</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>--> 
+          <!--<div class="col-md-2 col-sm-6 col-xs-12">
+                            <div class="speaker-item">
+                                <div class="speaker-image">
+                                    <img src="images/speakers/dr_GEN.jpg" alt="Dr. Santiago Rossi" class="img-responsive">
+                                </div>
+                                <div class="speaker-content">
+                                    <div class="details text-center">
+                                        <h6>Dr. Santiago Rossi</h6>
+                                        <span><small>I{{Lang.directoresC10}}</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="speaker-item">
+              <div class="speaker-image"> <img src="images/speakers/Dr_Jose_Luis_Sandoval.jpg" alt="Dr. José Luis Sandoval" class="img-responsive"> </div>
+              <div class="speaker-content">
+                <div class="details text-center">
+                  <h6>Dr. José Luis Sandoval</h6>
+                  <span><small>{{Lang.directoresC11}}</small></span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="speaker-item">
+              <div class="speaker-image"> <img src="images/speakers/Dra_Renata_Baez.jpg" alt="Dra. Renata Báez" class="img-responsive"> </div>
+              <div class="speaker-content">
+                <div class="details text-center">
+                  <h6>Dra. Renata Báez</h6>
+                  <span><small>{{Lang.directoresC12}}</small></span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="speaker-item">
+              <div class="speaker-image"> <img src="images/speakers/Dra_Cano.jpg" alt="Dra. Carmen Cano" class="img-responsive"> </div>
+              <div class="speaker-content">
+                <div class="details text-center">
+                  <h6>Dra. Maria del Carmen Cano</h6>
+                  <span><small>{{Lang.directoresC13}}</small></span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="speaker-item">
+              <div class="speaker-image"> <img src="images/speakers/Dra_Ma_cristina_Borrajo.jpg" alt="Dra. María Cristina Borrajo" class="img-responsive"> </div>
+              <div class="speaker-content">
+                <div class="details text-center">
+                  <h6>Dra. Cristina Borrajo</h6>
+                  <span><small>{{Lang.directoresC15}}</small></span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="speaker-item">
+              <div class="speaker-image"> <img src="images/speakers/Dr_Adrian_Rendon.jpg" alt="Dr. Luis Adrián Rendón" class="img-responsive"> </div>
+              <div class="speaker-content">
+                <div class="details text-center">
+                  <h6>Dr. Luis Adrián Rendón</h6>
+                  <span><small>{{Lang.directoresC16}}</small></span> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2"> </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="speaker-item">
+              <div class="speaker-image"> <img src="images/speakers/Dra_Leslie_Vargas.jpg" alt="Dra. Leslie Vargas" class="img-responsive"> </div>
+              <div class="speaker-content">
+                <div class="details text-center">
+                  <h6>Dra. Leslie Vargas</h6>
+                  <span><small>{{Lang.directoresC14}}</small></span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="speaker-item">
+              <div class="speaker-image"> <img src="images/speakers/Cecilia-Rodriguez.jpg" alt="Dra. Cecilia Rodriguez" class="img-responsive"> </div>
+              <div class="speaker-content">
+                <div class="details text-center">
+                  <h6>Dra. Cecilia Rodriguez</h6>
+                  <span><small>{{Lang.directoresC17}}</small></span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="speaker-item">
+              <div class="speaker-image"> <img src="images/speakers/Luis-Enrique-Payro.jpg" alt="" class="img-responsive"> </div>
+              <div class="speaker-content">
+                <div class="details text-center">
+                  <h6>Dr. Luis Enrique Payró</h6>
+                  <span><small>{{Lang.directoresC18}}</small></span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="speaker-item">
+              <div class="speaker-image"> <img src="images/speakers/Santiago-Rossi.jpg" alt="" class="img-responsive"> </div>
+              <div class="speaker-content">
+                <div class="details text-center">
+                  <h6>Dr. Santiago Rossi</h6>
+                  <span><small>{{Lang.directoresC19}}</small></span> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Deptos. Doctores--> 
+  <!-- PROGRAMA 
+        <section class="schedules padding-120" id="programa">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h3 class="lightBlue">{{Lang.programaHeader}}</h3>
+                </div>
+
+                <div class="schedule-tabs">
+
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#day-one" aria-controls="day-one" role="tab" data-toggle="tab">
+                                {{Lang.d001}}
+                                <span>{{Lang.f001}}</span>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#day-two" aria-controls="day-two" role="tab" data-toggle="tab">
+                                {{Lang.d002}}
+                                <span>{{Lang.f002}}</span>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#day-three" aria-controls="day-three" role="tab" data-toggle="tab">
+                                {{Lang.d003}}
+                                <span>{{Lang.f003}}</span>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#day-four" aria-controls="day-four" role="tab" data-toggle="tab">
+                                {{Lang.d004}}
+                                <span>{{Lang.f004}}</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="day-one">
+                            <div class="schedule-table table-responsive">
+                              <table>
+																<thead>
+																	<th>Horario</th>	
+																	<th>Salón</th> 	
+																	<th>Salón</th>	
+																	<th>Salón</th>	
+																	<th>Salón</th>	
+																	<th>Salón</th>	
+																	<th>Salón</th>	
+																	<th>Salón</th>	
+																	<th>Salón</th>
+                                </thead>	
+																<tbody>
+																	<tr>
+																		<td class="hora"><span><i class="far fa-clock"></i></span>7:00-7:45</td>	
+																		<td colspan="8" class="text-center"><b><small>Inscripción / Inscrição</small></b></td>
+																	</tr>							
+																	<tr>
+																		<td class="hora"><span><i class="far fa-clock"></i></span>8:00-17:00</td>	
+																		<td>
+																			<h6>Infecciones Respiratorias</h6> 
+																			<small class="text-center">Pro/Con (FCCNCT/ACCP)</small>
+																		</td>	
+																		<td>
+																			<h6>Rehabilitación Respiratoria</h6>
+																			<small class="text-center">(Cuidado Respiratorios)</small>
+																		</td>
+																		<td>
+																			<h6>Imágenes en EPID basado en casos de la vida real</h6> 
+																			<small class="text-center">(Intersticiales / Imágenes)</small>
+																		</td>	
+																		<td>
+																			<h6>Guías de Practica Clínica ALAT 2019: Curso de Taller de Entrenamiento en EPOC</h6>
+																			<small class="text-center">(EPOC)</small>
+																		</td>	
+																		<td>
+																			<h6>Síndrome de apnea hipopnea del sueño: Diagnóstico y tratamiento</h6> 
+																			<small class="text-center">(Sueño)</small>
+																		</td>	
+																		<td>
+																			<h6>Curso ALAT de certificación de DLCO</h6> 
+																			<small class="text-center">(Fisiopatología)</small>
+																		</td>	 
+																		<td>
+																			<h6>Síndrome de Distrés Respiratorio ¿Qué hemos aprendido en estas 5 décadas?</h6> 
+																			<small class="text-center">(Medicina Crítica)</small>
+																		</td>	
+																		<td>
+																			<h6>Curso de intervencionismo pulmonar</h6> 
+																			<small class="text-center">(Endoscopía)</small>
+																		</td>
+																	</tr>
+																</tbody>				
+															</table>
+                            </div>
+                            <a href="#" class="schedule-button default-button">download schedule <span><i class="fa fa-download" aria-hidden="true"></i></span></a>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="day-two">
+                            <div class="schedule-table table-responsive">
+                            <table>
+																<thead>
+																	<th>Horario</th>	
+																	<th>Anayansi</th>	
+																	<th>La Huaca</th>	
+																	<th>Contadora</th>	
+																	<th>Boquete</th>	
+																	<th>San Lorenzo</th>
+																	<th>Las Cestas</th>	
+																	<th>Portobelo</th>
+                              </thead>
+																<tbody>
+																	<tr>
+																		<td rowspan="2" class="hora"><span><i class="far fa-clock"></i></span>7:00-7:45</td>	
+																		<td colspan="7"><b><small>Inscripción / Inscrição</small></b></td>
+																	</tr>						
+																	<tr>
+																		<td><h6>Simposio Desayuno</h6></td>	
+																		<td><h6>Simposio Desayuno</h6></td>	
+																		<td><h6>Simposio Desayuno</h6></td>	
+																		<td><h6>Simposio Desayuno</h6></td>	
+																		<td><h6>Simposio Desayuno</h6></td>	
+																		<td><h6>Simposio Desayuno</h6></td>	
+																		<td><h6>Simposio Desayuno</h6></td>
+																	</tr>
+																	<tr>
+																		<td class="hora"><span><i class="far fa-clock"></i></span>8:00-10:00</td>
+																		<td></td>
+																		<td><h6>Asma</h6></td>	
+																		<td><h6>FCCNCT</h6></td>	
+																		<td><h6>Cirugía Torácica</h6></td>	
+																		<td><h6>Inter-Departamento</h6></td>	
+																		<td><h6>Cuidados Respiratorios</h6></td>	
+																		<td><h6>Infecciosas</h6></td>
+																	</tr>
+																	<tr>
+																		<td class="hora"><span><i class="far fa-clock"></i></span>10:00 -10:30</td>	
+																		<td colspan="7"><em><b><small>Visita a Sala Comercial</small></b></em></td>
+																	</tr>						
+																	<tr>
+																		<td class="hora"><span><i class="far fa-clock"></i></span>10:00-10:45</td>	
+																		<td colspan="7"><b><small>Trabajos Libres</small></b></td>
+																	</tr>						
+																	<tr>
+																		<td class="hora"><span><i class="far fa-clock"></i></span>10:45-12:45</td>
+																		<td></td>
+																		<td><h6>Intersticiales</h6></td>	
+																		<td><h6>ERS</h6></td>	
+																		<td><h6>Inter-Departamento</h6></td>	
+																		<td><h6>Circulación Pulmonar</h6></td> 	
+																		<td><h6>Endoscopía</h6></td>	
+																		<td><h6>Fisiopatología</h6></td>
+																	</tr>
+																	<tr>
+																		<td class="hora"><span><i class="far fa-clock"></i></span>12:45-13:45</td>	
+																		<td><h6>Simposio Almuerzo</h6></td>	
+																		<td><h6>Simposio Almuerzo</h6></td>	
+																		<td><h6>Simposio Almuerzo</h6></td>	
+																		<td><h6>Simposio Almuerzo</h6></td>	
+																		<td><h6>Simposio Almuerzo</h6></td>	
+																		<td><h6>Simposio Almuerzo</h6></td>	
+																		<td><h6>Simposio Almuerzo</h6></td>
+																	</tr>
+																	<tr>
+																		<td class="hora"><span><i class="far fa-clock"></i></span>14:00-16:00</td>
+																		<td></td>
+																		<td><h6>EPOC</h6></td>	
+																		<td><h6>Imágenes</h6></td>	
+																		<td><h6>Medicina Crítica</h6></td>	
+																		<td><h6>Oncología</h6></td>	
+																		<td><h6>Sueño</h6></td>	
+																		<td><h6>Pediatría</h6></td>
+																	</tr>
+																	<tr>
+																		<td class="hora"><span><i class="far fa-clock"></i></span>16:00-17:00</td>	
+																		<td colspan="7"><em><b><small>Visita a Sala Comercial</small></b></em></td>
+																	</tr>						
+																	<tr>
+																		<td class="hora">16:00-17:00</td>	
+																		<td colspan="7"><b><small>Trabajos Libres</small></b></td>
+																	</tr>						
+																	<tr>
+																		<td class="hora"><span><i class="far fa-clock"></i></span>17:00-18:00</td>	
+																		<td><h6>Simposio Tarde</h6></td>	
+																		<td><h6>Simposio Tarde</h6></td>	
+																		<td><h6>Simposio Tarde</h6></td>	
+																		<td><h6>Simposio Tarde</h6></td>	
+																		<td><h6>Simposio Tarde</h6></td>	
+																		<td><h6>Simposio Tarde</h6></td>	
+																		<td><h6>Simposio Tarde</h6></td>
+																	</tr>
+																	<tr>
+																		<td class="hora"><span><i class="far fa-clock"></i></span>18:30-19:30</td>	
+																		<td colspan="7"><b><small>Inauguración</small></b></td>
+																	</tr>						
+																	<tr>
+																		<td class="hora"><span><i class="far fa-clock"></i></span>19:30-22:00	</td>
+																		<td colspan="7"><b><small>Coctel de Inauguración</small></b></td>
+																	</tr>
+																</tbody>	
+															</table>					    
+                            </div>
+                                                    <a href="#" class="schedule-button default-button">download schedule <span><i class="fa fa-download" aria-hidden="true"></i></span></a>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="day-three">
+                            <div class="schedule-table table-responsive">
+                               	<table>
+																	<thead>
+																		<th>Horario</th>	
+																		<th>Anayansi</th>	
+																		<th>La Huaca</th>	
+																		<th>Contadora</th>	
+																		<th>Boquete</th>	
+																		<th>San Lorenzo</th>	
+																		<th>Las Cestas</th>	
+																		<th>Portobelo</th>
+                                  </thead>
+																	<tbody>
+																		<tr>
+																			<td class="hora"><span><i class="far fa-clock"></i></span>7:00-7:45</td>	
+																			<td><h6>Simposio Desayuno</h6></td>	
+																			<td><h6>Simposio Desayuno</h6></td>	
+																			<td><h6>Simposio Desayuno</h6></td>	
+																			<td><h6>Simposio Desayuno</h6></td>	
+																			<td><h6>Simposio Desayuno</h6></td>	
+																			<td><h6>Simposio Desayuno</h6></td>	
+																			<td><h6>Simposio Desayuno</h6></td>
+																		</tr>
+																		<tr>
+																			<td class="hora"><span><i class="far fa-clock"></i></span>8:00-10:00</td>		
+																			<td></td>
+																			<td><h6>Tuberculosis</h6></td>	
+																			<td><h6>ATS</h6></td>	
+																			<td><h6>Medicina Crítica</h6></td>	
+																			<td><h6>Tabaquismo</h6></td>	
+																			<td><h6>Pediatría</h6></td>
+																			<td><h6>Sueño</h6></td>
+																		</tr>
+																		<tr>
+																			<td class="hora"><span><i class="far fa-clock"></i></span>10:00 -10:30</td>	
+																			<td colspan="7"><em><b><small>Visita a Sala Comercial</small></b></em></td>
+																		</tr>						
+																		<tr>
+																			<td class="hora"><span><i class="far fa-clock"></i></span>10:00-10:45</td>	
+																			<td colspan="7"><b><small>Trabajos Libres</small></b></td>
+																		</tr>						
+																		<tr>
+																			<td class="hora"><span><i class="far fa-clock"></i></span>10:45-12:45</td>	
+																			<td></td>
+																			<td><h6>EPOC</h6></td>	
+																			<td><h6>SEPAR</h6></td>	
+																			<td><h6>Proyectos ALAT</h6></td> 	
+																			<td><h6>Oncología</h6></td>	
+																			<td><h6>Inter-Departamento</h6></td>	
+																			<td><h6>Fisiopatología</h6></td>
+																		</tr>
+																		<tr>
+																			<td class="hora"><span><i class="far fa-clock"></i></span>12:45-13:45</td>	
+																			<td><h6>Simposio Almuerzo</h6></td>	
+																			<td><h6>Simposio Almuerzo</h6></td>	
+																			<td><h6>Simposio Almuerzo</h6></td>	
+																			<td><h6>Simposio Almuerzo</h6></td>	
+																			<td><h6>Simposio Almuerzo</h6></td>	
+																			<td><h6>Simposio Almuerzo</h6></td>	
+																			<td><h6>Simposio Almuerzo</h6></td>
+																		</tr>
+																		<tr>
+																			<td class="hora"><span><i class="far fa-clock"></i></span>14:00-16:00</td>	
+																			<td></td>
+																			<td><h6>Intersticiales</h6></td>	
+																			<td><h6>CHEST</h6></td>	
+																			<td><h6>Cirugía Torácica</h6></td>	
+																			<td><h6>Asma</h6></td>	
+																			<td><h6>Cuidados Respiratorios</h6></td>	
+																			<td><h6>Infecciosas</h6></td>
+																		</tr>
+																		<tr>
+																			<td class="hora"><span><i class="far fa-clock"></i></span>16:00-17:00</td>	
+																			<td colspan="7"><em><b><small>Visita a Sala Comercial</small></b></em></td>
+																		</tr>						
+																		<tr>
+																			<td class="hora"><span><i class="far fa-clock"></i></span>16:00-17:00</td>	
+																			<td colspan="7"><b><small>Trabajos Libres</small></b></td>
+																		</tr>						
+																		<tr>
+																			<td class="hora"><span><i class="far fa-clock"></i></span>17:00-18:00</td>	
+																			<td><h6>Simposio Tarde</h6></td>	
+																			<td><h6>Simposio Tarde</h6></td>	
+																			<td><h6>Simposio Tarde</h6></td>	
+																			<td><h6>Simposio Tarde</h6></td>	
+																			<td><h6>Simposio Tarde</h6></td>	
+																			<td><h6>Simposio Tarde</h6></td>	
+																			<td><h6>Simposio Tarde</h6></td>
+																		</tr>
+																	</tbody>
+																</table>
+                            </div>
+
+                                                     <a href="#" class="schedule-button default-button">download schedule <span><i class="fa fa-download" aria-hidden="true"></i></span></a>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="day-four">
+                            <div class="schedule-table table-responsive">
+                            	<table>
+															<thead>
+																<th>Horario</th>	
+																<th>Anayansi</th>	
+																<th>La Huaca</th>	
+																<th>Contadora</th>	
+																<th>Boquete</th>	
+																<th>San Lorenzo</th>	
+																<th>Las Cestas</th>	
+																<th>Portobelo</th>
+															</thead>
+															<tbody>
+																<tr>
+																	<td class="hora"><span><i class="far fa-clock"></i></span>7:00-7:45</td>	
+																	<td><h6>Simposio Desayuno</h6></td>	
+																	<td><h6>Simposio Desayuno</h6></td>	
+																	<td><h6>Simposio Desayuno</h6></td>	
+																	<td><h6>Simposio Desayuno</h6></td>	
+																	<td><h6>Simposio Desayuno</h6></td>	
+																	<td><h6>Simposio Desayuno</h6></td>	
+																	<td><h6>Simposio Desayuno</h6></td>
+																</tr>
+																<tr>
+																	<td class="hora"><span><i class="far fa-clock"></i></span>8:00-10:00</td>		
+																	<td></td>
+																	<td><h6>Imágenes</h6></td>	
+																	<td><h6>Tuberculosis</h6></td>	
+																	<td><h6>Guías ALAT</h6></td>	
+																	<td><h6>Tabaquismo</h6></td>	
+																	<td><h6>Endoscopía</h6></td>	
+																	<td><h6>Circulación Pulmonar</h6></td>
+																</tr>
+																<tr>
+																	<td class="hora"><span><i class="far fa-clock"></i></span>10:00 -10:30</td>	
+																	<td colspan="7"><em><b><small>Visita a Sala Comercial</small></b></em></td>
+																</tr>						
+																<tr>
+																	<td class="hora"><span><i class="far fa-clock"></i></span>10:00 -10:30</td>	
+																	<td colspan="7"><b><small>Trabajos Libres</small></b></td>
+																</tr>						
+																<tr>
+																	<td class="hora"><span><i class="far fa-clock"></i></span>10:30-12:30</td>	
+																	<td colspan="7"><b><small>Asamblea General</small></b></td>
+																</tr>						
+																<tr>
+																	<td class="hora"><span><i class="far fa-clock"></i></span>12:30-13:30</td>		
+																	<td></td>
+																	<td><h6>Inter Departamento</h6></td>	
+																	<td><h6>Inter Departamento</h6></td>	
+																	<td><h6>Inter Departamento</h6></td>	
+																	<td><h6>Inter Departamento</h6></td>	
+																	<td><h6>Inter Departamento</h6></td>	
+																	<td><h6>Inter Departamento</h6></td>
+																</tr>
+																<tr>
+																	<td colspan="8"><b><small>Clausura</small></b></td>
+																</tr>
+															</tbody>
+															</table>							    
+                            </div>
+
+                            <a href="#" class="schedule-button default-button">download schedule <span><i class="fa fa-download" aria-hidden="true"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        PROGRAMA end here --> 
+	<section class="schedules" id="comite">
+    <div class="container">
+      <div class="section-header text-center">
+        <h3 class="lightBlue">COMITÉ CIENTÍFICO</h3>
+      </div>
+	<div class="col-md-12 col-sm-12 col-xs-12">
+            <p class="botonRegistro"><a href="images/Comite.jpg" class="botonRegistro"> Comité Científico
+          </a></p>
+		</div>
+		</div>
+	</section>
+  <section id="cartainvitacion" class="pricing pricing-six pricing-seven">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          <h3 class="text-center lightBlue">CARTA INVITACIÓN</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-10 col-lg-offset-1">
+          <div id="getLetter">
+            <input type="text" placeholder="(Espacio editable para el nombre de la persona)">
+            <button type="button" disabled><i class="fa fa-check fa-2x"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+	</section>
+  <!--REGISTRO start here-->
+  <section id="registro" class="padding-120">
+    <div class="container">
+      <div class="section-header text-center">
+        <h3 class="lightBlue">REGISTRO</h3>
+      </div>
+      <div class="row">
+        <div class="col-xs-12" style="padding-top: 40px;">
+          <div class="table-responsive">
+            <table class="table">
+              <tbody>
+                <tr class="tableWhite">
+                  <td class="participantes">
+                    <h4>{{Lang.reg01}}</h4>
+                  </td><!--
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>{{Lang.reg02}} <strong><sup>$</sup>250.<sup>00 USD</sup></strong></p>
+                    <p><span><i class="far fa-calendar-alt"></i></span>{{Lang.reg03}} <strong><sup>$</sup>300.<sup>00 USD</sup></strong></p>
+                  </td>-->
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>300.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg04}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+                <tr class="tableBlue">
+                  <td class="participantes">
+                    <h4>{{Lang.reg06}}</h4>
+                  </td><!--
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>{{Lang.reg07}} <strong><sup>$</sup>350.<sup>00 USD</sup></strong></p>
+                    <p><span><i class="far fa-calendar-alt"></i></span>{{Lang.reg08}} <strong><sup>$</sup>400.<sup>00 USD</sup></strong></p>
+                  </td>-->
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>400.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg09}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+                <tr class="tableWhite">
+                  <td class="participantes">
+                    <h4>{{Lang.reg010}}</h4>
+                  </td><!--
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>{{Lang.reg011}} <strong><sup>$</sup>150.<sup>00 USD</sup></strong></p>
+                    <p><span><i class="far fa-calendar-alt"></i></span>{{Lang.reg012}} <strong><sup>$</sup>200.<sup>00 USD</sup></strong></p>
+                  </td>-->
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>200.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg013}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+                <tr class="tableBlue">
+                  <td class="participantes">
+                    <h4>{{Lang.reg014}}</h4>
+                  </td><!--
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>{{Lang.reg015}} <strong><sup>$</sup>100.<sup>00 USD</sup></strong></p>
+                    <p><span><i class="far fa-calendar-alt"></i></span>{{Lang.reg016}} <!--<strong><sup>$</sup>150.<sup>00 USD</sup></strong></p>
+                  </td>-->
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>150.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg017}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+				</tbody>
+			  </table>
+				</div>
+			</div>
+		  </div>
+				<!--<tr class="tableBlue">
+                  <td class="participantes">
+                    <h4>PROMOCIÓN INSCRIPCIONES GRUPALES</h4>
+                  </td>
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>Grupos de 20 a 39 personas en cualquier <br>categoría<strong>25% <br>de descuento</strong></p>
+                  	<br><p><span><i class="far fa-calendar-alt"></i></span>Grupos de 40 personas en adelante en cualquier categoría <strong>50% <br>de descuento</strong></p>
+                	<p class="padding20"><em>Promoción valida únicamente registro en linea y hasta el 31 de mayo 2019</em></p>
+				  </td>
+                  <td class="costoVigente">
+					<p class="text-center blue"><em><strong>OBSERVACIONES:<br></strong></em></p>
+					<p class="text-justify"><em>* Primero se debe de hacer el pago por el número de personas que necesiten, una vez realizado el pago se les otorgaran códigos para que puedan realizar su inscripción.</em></p>  
+					<p class="text-justify"><em>** Pagos únicamente con depósitos o tarjeta y en una sola exhibición.</em></p>
+					<p class="text-justify"><em>*** No se aceptarán registros grupales en sitio.</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>-->
+      <div class="row">
+        <div class="col-xs-12" style="padding-top: 40px;">
+          <div class="table-responsive">
+            <table class="table">
+              <tbody>
+		  <div class="section-header text-center">
+        <h3 class="lightBlue" style="margin-bottom: 40px;">CURSOS</h3>
+      </div>
+				<tr class="tableWhite">
+                  <td class="participantes">
+                    <h4>Curso</h4>
+                  </td>
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>Rehabilitación Respiratoria</p>
+                  </td>
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>60.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg04}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+				<tr class="tableWhite">
+                  <td class="participantes">
+                    <h4>Curso</h4>
+                  </td>
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>Imágenes (Intersticiales/ imagenes)</p>
+                  </td>
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>60.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg04}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+				<tr class="tableWhite">
+                  <td class="participantes">
+                    <h4>Curso</h4>
+                  </td>
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>Asma y EPOC</p>
+                  </td>
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>60.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg04}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+				  <tr class="tableWhite">
+                  <td class="participantes">
+                    <h4>Curso</h4>
+                  </td>
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>Sueño</p>
+                  </td>
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>60.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg04}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+				 <tr class="tableWhite">
+                  <td class="participantes">
+                    <h4>Curso</h4>
+                  </td>
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>DLCO</p>
+                  </td>
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>60.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg04}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+				<tr class="tableWhite">
+                  <td class="participantes">
+                    <h4>Curso</h4>
+                  </td>
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>Medicina Critica</p>
+                  </td>
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>60.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg04}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+				  <tr class="tableBlue">
+                  <td class="participantes">
+                    <h4>Curso</h4>
+                  </td>
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>Intervencionismo (Invervencionismo o pulmonar) </p>
+                    <p><span><i class="far fa-calendar-alt"></i></span>Participación solo a sesión Teórica <strong><sup>$</sup>60.<sup>00 USD</sup></strong></p>
+                    <p><span><i class="far fa-calendar-alt"></i></span>Sesión Teórica + Práctica<strong><sup>$</sup>120.<sup>00 USD</sup></strong></p>
+                  </td>
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>60.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg04}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+				<tr class="tableWhite">
+                  <td class="participantes">
+                    <h4>Curso</h4>
+                  </td>
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span> Circulación</p>
+                  </td>
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>60.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg04}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+				  <tr class="tableWhite">
+                  <td class="participantes">
+                    <h4>Curso</h4>
+                  </td>
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>Oncología y Cirugía</p>
+                  </td>
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>60.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg04}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+				  <tr class="tableWhite">
+                  <td class="participantes">
+                    <h4>Curso<br></h4>
+                  </td>
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>Tuberculosis "Curso para posgraduados: una nueva era en tuberculosis" "Diagnóstico de TB y de resistencia - baciloscopía vs GeneXpert en la detección de casos nuevos"<br>(Duración 570 minutos)
+</p>
+					  <p><span><i class="far fa-calendar-alt"></i></span>Salón La Huaca</p>
+					  <p><span><i class="far fa-calendar-alt"></i></span>Capacidad
+600 personas, 3 de julio 2019 de 08:00 - 17:30 HRS.</p>
+					    <p><strong><em>Si usted cuenta con la inscripción al Congreso, no tienen costo adicional</em></strong></p>
+                  </td>
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>60.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg04}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+				  <tr class="tableWhite">
+                  <td class="participantes">
+                    <h4>Curso<br></h4>
+                  </td>
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>"FCCNCT /CHEST - Curso de Actualización en Neumología: Qué podemos adoptar en nuestra región"<br>(Duración 540 minutos)
+</p>
+					  <p><span><i class="far fa-calendar-alt"></i></span>Salón Contadora</p>
+					  <p><span><i class="far fa-calendar-alt"></i></span>Capacidad 400 personas, 3 de julio 2019 de 08:00 - 17:00 HRS.</p>
+					    <p><strong><em>Si usted cuenta con la inscripción al Congreso, no tienen costo adicional</em></strong></p>
+                  </td>
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>60.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg04}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+				  <tr class="tableWhite">
+                  <td class="participantes">
+                    <h4>Curso<br></h4>
+                  </td>
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>"Tabaquismo
+Capacitación en tratamiento del tabaquismo - ALAT-SEPAR-GB (Tabaquismo)"<br>(Duración 540 minutos)
+</p>
+					  <p><span><i class="far fa-calendar-alt"></i></span>Salón San Lorenzo</p>
+					  <p><span><i class="far fa-calendar-alt"></i></span>Capacidad 350 Personas, 3 de julio 2019 de 08:00 - 17:00 HRS.</p>
+					    <p><strong><em>Si usted cuenta con la inscripción al Congreso, no tienen costo adicional</em></strong></p>
+                  </td>
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>60.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg04}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+				   <tr class="tableWhite">
+                  <td class="participantes">
+                    <h4>Curso<br></h4>
+                  </td>
+                  <td class="fechas">
+                    <p><span><i class="far fa-calendar-alt"></i></span>"Fisiopatología
+Curso ALAT de Espirometría"<br>(Duración 540 minutos)
+</p>
+					  <p><span><i class="far fa-calendar-alt"></i></span>Salón Bejuco/Chocoe</p>
+					  <p><span><i class="far fa-calendar-alt"></i></span>Capacidad: 30 Personas, 3 de julio 2019 de 08:00 - 17:00 HRS.</p>
+					    <p><strong><em>Si usted cuenta con la inscripción al Congreso, no tienen costo adicional</em></strong></p>
+                  </td>
+                  <td class="costoVigente">
+                    <h3><sup>$</sup>60.<sup>00 USD</sup></h3>
+                    <p><em>{{Lang.reg04}}</em></p>
+                  </td>
+                  <td class="botonRegistro">
+                    <a href="http://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank">
+                      <p>{{Lang.reg05}}</p>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--REGISTRO ends here --> 
+  
+  <!-- TRABAJOS start here -->
+  <section  class="padding-120" id="tCientificos">
+    <div class="container">
+      <div class="section-header text-center">
+        <h3 class="blue">{{Lang.abs01}}</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-push-2">
+          <div class="trabajoCientificos">
+            <div class="row">
+              <div class="col-md-3">
+                <span class="lightBlue"><i class="fas fa-flask fa-7x"></i></span> 
+              </div>
+              <div class="col-md-9">
+                <div class="botonTrabajos"> <a href="https://trabajos2019.congresosalat.org/es" target="_blank">
+                  <p class="text-center">{{Lang.abs02}}</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--<div class="row">
+        <div class="col-xs-12">
+          <div id="getLetterAbstracts">
+            <input id="nameAbstracts" type="text" placeholder="(Espacio editable para el nombre de la persona)">
+            <input id="workAbstracts" type="text" placeholder="(Espacio editable para el nombre del trabajo cientifico)">
+            <button type="button" disabled><i class="fa fa-check fa-2x"></i></button>
+          </div>
+        </div>
+      </div>-->
+    </div>
+  </section>
+  <!-- TRABAJOS ends here --> 
+  
+  <!-- HOSPEDAJE start here -->
+  <section class="home-blog padding-120" id="hospedaje">
+    <div class="container">
+      <div class="section-header text-center">
+        <h3 class="blue">{{Lang.headerHospedaje}}</h3>
+        <em style="color: #5cb85c; font-size: 25px;">{{Lang.subHospedaje}}</em> </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="blog-item">
+            <div class="image"> <a href="#"><img src="images/sheraton_gran_panam.jpg" alt="Blog image" class="img-responsive"></a> </div>
+            <div class="content">
+              <h4 class="text-center lightBlue"><span style="font-size: 25px;">Sheraton Grand Panamá</span></h4>
+              <h4 class="text-center"><small style="text-transform: none;">{{Lang.textoH021}}</small><span style="font-size: 25px;"><sup style="padding-left: 10px;">$</sup>141 USD</span><br>
+                <em><span class="text-center" style="text-transform: none;"><small class="naranja"><b>{{Lang.incluye002}}</b></small></span></em></h4>
+              <div class="text-center" style="padding-top: 20px;"> <a href="https://housing.checkmein.com.mx/alat2019/ESP/" target="_blank" style="font-size: 25px; color: #5cb85c;"><span style="padding-right: 10px;"><i class="fas fa-concierge-bell"></i></span>{{Lang.botonRESERVAR}}</a>
+                <p class="text-center"><em>{{Lang.leyendaBoton}}</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="blog-item">
+            <div class="image"> <a href="#"><img src="images/aloft.JPEG" alt="Blog image" class="img-responsive"></a> </div>
+            <div class="content">
+              <h4 class="text-center lightBlue"><span style="font-size: 25px;">Aloft Panamá</span></h4>
+              <h4 class="text-center"><small style="text-transform: none;">{{Lang.textoH021}}</small><span style="font-size: 25px;"><sup style="padding-left: 10px;">$</sup>129 USD</span><br>
+                <em><span class="text-center" style="text-transform: none;"><small class="naranja"><b>{{Lang.incluye002}}</b></small></span></em></h4>
+              
+              <!--<p class="text-right"><em>*Sujetas a 16% IVA</em></p>-->
+              
+              <div class="text-center" style="padding-top: 20px;"> <a href="https://housing.checkmein.com.mx/alat2019/ESP/" target="_blank" style="font-size: 25px; color: #5cb85c;"><span style="padding-right: 10px;"><i class="fas fa-concierge-bell"></i></span>{{Lang.botonRESERVAR}}</a>
+                <p class="text-center"><em>{{Lang.leyendaBoton}}</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HOSPEDAJE end here --> 
+  <!-- SEDE start here -->
+  <section class="travel" id="sede">
+    <div class="container">
+      <div class="section-header text-center">
+        <h3 class="blue">{{Lang.headerSede}}</h3>
+        <!--                    <p><em>País:<b> Panamá</b></em></p>--> 
+      </div>
+		<div class="embed-responsive embed-responsive-16by9">
+			  <video class="embed-responsive-item" controls poster="images/logo-ALAT-menu.png">
+				<source src="media/covenciones_es.mp4" type="video/mp4">
+			</video>
+		  </div>
+      <!--<div class="row">
+        <div class="col-md-8 col-xs-push-2">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+             Wrapper for slides 
+            <div class="carousel-inner" role="listbox">
+              <div class="item active"> <img src="images/fotos_Panama/Ciudad-de-Panama.jpg" alt="Ciudad de Panamá" class="img-responsive"> </div>
+              <div class="item"> <img src="images/fotos_Panama/Panama.jpg" alt="Panamá" class="img-responsive"> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top: 40px; font-size: 25px;" class="text-center"> <a href="http://www.visitpanama.com" target="_blank"><img src="images/visitpanamalogo.svg" alt="Visit Panama Logo" style="width: 100px;"></a>
+        <p style="font-size: 25px; color: #08A46D;">{{Lang.autoridadT}}<a href="http://www.visitpanama.com" target="_blank" style="text-decoration: none"><b> www.visitpanama.com</b></a></p>
+      </div>
+      <div class="row" style="padding-top: 40px; padding-bottom: 40px;">
+        <div class="row">
+          <div class="info-item first col-md-5 col-sm-12 col-xs-push-1">
+            <div class="icon" style="background-color: #0B447C;"><i class="far fa-money-bill-alt fa-2x" style="padding-top: 10px;"></i></div>
+            <div class="details">
+              <h4 style="color: #0B447C;">{{Lang.monedaH}}</h4>
+              <p class="text-justify">{{Lang.monedaT}}</p>
+            </div>
+          </div>
+          <div class="info-item first col-md-5 col-sm-12 col-xs-push-1">
+            <div class="icon" style="background-color: #0B447C;"> <i class="fas fa-bolt fa-2x" style="padding-top: 10px;"></i></div>
+            <div class="details">
+              <h4 style="color: #0B447C;">{{Lang.electricidadH}}</h4>
+              <p class="text-justify">{{Lang.electricidadT}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="info-item second col-md-4 col-sm-12">
+            <div class="icon" style="background-color: #135A9F;"><i class="fas fa-suitcase-rolling fa-2x" style="padding-top: 10px;"></i></div>
+            <div class="details">
+              <h4 style="color: #135A9F;">{{Lang.turismoH}}</h4>
+              <p class="text-justify">{{Lang.turismoT}}</p>
+            </div>
+          </div>
+          <div class="info-item second col-md-4 col-sm-12">
+            <div class="icon" style="background-color: #135A9F;"><i class="fas fa-shopping-cart fa-2x" style="padding-top: 10px;"></i></div>
+            <div class="details">
+              <h4 style="color: #135A9F;">{{Lang.comercioH}}</h4>
+              <p class="text-justify">{{Lang.comercioT}}</p>
+            </div>
+          </div>
+          <div class="info-item second col-md-4 col-sm-12">
+            <div class="icon" style="background-color: #135A9F;"><i class="fas fa-hand-holding-usd fa-2x" style="padding-top: 10px;"></i></div>
+            <div class="details">
+              <h4 style="color: #135A9F;">{{Lang.propinasH}}</h4>
+              <p class="text-justify">{{Lang.propinasT}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="info-item third col-md-4 col-sm-12">
+            <div class="icon" style="background-color: #391BA9;"><i class="far fa-clock fa-2x" style="padding-top: 10px;"></i></div>
+            <div class="details">
+              <h4 style="color: #391BA9;">{{Lang.horarioH}}</h4>
+              <p class="text-justify">{{Lang.horarioT}}</p>
+            </div>
+          </div>
+          <div class="info-item third col-md-4 col-sm-12">
+            <div class="icon" style="background-color: #391BA9;"><i class="far fa-address-card fa-2x" style="padding-top: 10px;"></i></div>
+            <div class="details">
+              <h4 style="color: #391BA9;">{{Lang.licenciaH}}</h4>
+              <p class="text-justify">{{Lang.licenciaT}}</p>
+            </div>
+          </div>
+          <div class="info-item third col-md-4 col-sm-12">
+            <div class="icon" style="background-color: #391BA9;"><i class="fas fa-globe fa-2x" style="padding-top: 10px;"></i></div>
+            <div class="details">
+              <h4 style="color: #391BA9;">{{Lang.idiomaH}}</h4>
+              <p class="text-justify">{{Lang.idiomaT}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="info-item fourth col-md-4 col-sm-12">
+            <div class="icon" style="background-color: #543CAE;"><i class="fas fa-map-marked-alt  fa-2x" style="padding-top: 10px;"></i></div>
+            <div class="details">
+              <h4 style="color: #543CAE;">{{Lang.panamaH}}</h4>
+              <p class="text-justify">{{Lang.panamaT}}</p>
+            </div>
+          </div>
+          <div class="info-item fourth col-md-4 col-sm-12">
+            <div class="icon" style="background-color: #543CAE;"><i class="fas fa-tshirt fa-2x" style="padding-top: 10px;"></i></div>
+            <div class="details">
+              <h4 style="color: #543CAE;">{{Lang.vestimentaH}}</h4>
+              <p class="text-justify">{{Lang.vestimentaT}}</p>
+            </div>
+          </div>
+          <div class="info-item fourth col-md-4 col-sm-12">
+            <div class="icon" style="background-color: #543CAE;"><i class="fas fa-utensils fa-2x" style="padding-top: 10px;"></i></div>
+            <div class="details">
+              <h4 style="color: #543CAE;">{{Lang.restauranteH}}</h4>
+              <p class="text-justify">{{Lang.restauranteT}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="info-item fiveth col-md-6 col-sm-12 col-md-push-3">
+            <div class="icon" style="background-color: #715EC1;"><i class="fas fa-umbrella-beach fa-2x" style="padding-top: 10px;"></i></div>
+            <div class="details">
+              <h4 style="color: #715EC1;">{{Lang.climaH}}</h4>
+              <p class="text-justify">{{Lang.climaT}}</p>
+            </div>
+          </div>
+          
+          <div class="info-item fiveth col-md-5 col-sm-12 col-xs-push-1">
+                            <div class="icon" style="background-color: #715EC1;"><i class="fas fa-heartbeat fa-2x" style="padding-top: 10px;"></i></div>
+                            <div class="details">
+                                <h4 style="color: #715EC1;">{{Lang.saludH}}</h4>
+                                <p class="text-justify">{{Lang.saludT}}</p>
+                            </div>
+                        </div> 
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12" >
+          <div id="carousel-example-generic02" class="carousel slide" data-ride="carousel" > 
+             Wrapper for slides 
+            <div class="carousel-inner" role="listbox">
+              <div class="item active"> <img src="images/atlapa/Atlapa.jpg" alt="Atlapa"> </div>
+              <div class="item"> <img src="images/atlapa/atlapa002.jpg" alt="Atlapa"> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h3 class="text-center lightBlue"><span style="font-weight: normal;">{{Lang.sub01Sede}}:</span> {{Lang.sub02Sede}}</h3>
+          <br>
+          <p class="text-justify"> <b>ATLAPA</b> {{Lang.p01Sede}} </p>
+          <p class="text-justify"> <b>ATLAPA</b>, {{Lang.p02Sede}} </p>
+        </div>
+      </div>
+    </div>
+  </section>-->
+  <!-- SEDE end here --> 
+  <!-- Map start here -->
+	  </div>
+</section>
+  <section class="home-map">
+    <div id="home-map" class="map"></div>
+  </section>
+  <!-- Map end here --> 
+  <!--Tours start here-->
+  <section id="tour" class="padding-120">
+    <div class="container">
+      <div class="section-header text-center">
+        <h3 class="blue">{{Lang.headerTour}}</h3>
+        <!--                    <p><em>País:<b> Panamá</b></em></p>--> 
+      </div>
+      <div class="col-md-6 col-sm-12 text-center" style="padding-top: 70px;"> <a href="http://www.aventuras2000.com/es/alat" target="_blank">
+        <button class="btn btn-naranja">{{Lang.botonTour}}</button>
+        </a> </div>
+    </div>
+  </section>
+  <!--Tours end here--> 
+  <!-- CONTACTO Start here -->
+	<div>
+	<a href="https://online.checkmein.com.mx/ALAT2019/ESP/" target="_blank"><img style="display:scroll; width: 150px; position:fixed; top:100px; left:20px;" src="images/inscrip.jpg" alt="osos"></a>
+		</div>
+  <footer id="contacto">
+    <div class="overlay">
+      <div class="container">
+        <h2>{{Lang.headerContacto}}</h2>
+        <div class="row" style="padding-top: 30px;">
+          <div class="text-center col-sm-12" style="padding-bottom: 40px;"> <img src="images/logo_ALAT_Contacto.png" alt="logotipo ALAT" width="200px;">
+            <ul class="event-social">
+              <li><a href="https://www.facebook.com/alatorax/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://twitter.com/alatorax" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/alatoraxorg/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/user/alatorax" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <h4 class="naranja">{{Lang.subHeaderC01}}</h4>
+            <a href="mailto: infoalat2019@btcamericas.com" target="_top">
+            <p>infoalat2019@btcamericas.com</p>
+            </a> </div>
+          <div class="col-md-4 text-center col-sm-12">
+            <h4 class="naranja">{{Lang.subHeaderC02}}:</h4>
+            <p>LAET. Itzel Valero Placencia <br>
+              <a href="mailto: ivalero@btcamericas.com" target="_top">ivalero@btcamericas.com</a></p>
+          </div>
+          <div class="col-md-4 text-center col-sm-12">
+            <h4 class="naranja">{{Lang.subHeaderC03}}:</h4>
+            <p> 52005106 // 52005102  <br>
+              <a href="mailto: housingalat2019@btcamericas.com" target="_top">housingalat2019@btcamericas.com</a></p>
+          </div>
+          <div class="col-md-4 text-center col-sm-12">
+            <h4 class="naranja">{{Lang.subHeaderC04}}</h4>
+            <p>+52 (55) 52005129 // +52 (55) 52005115 <br>
+              <a href="mailto: helpdesk@btcamericas.com" target="_top">helpdesk@btcamericas.com</a> </p>
+          </div>
+          <div class="col-sm-12 text-center">
+            <center>
+              <img src="images/logo_BTC.png" class="img-responsive" alt="logotipo BTC">
+            </center>
+            <ul class="event-social">
+              <li><a href="https://www.facebook.com/BTCMexico/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://twitter.com/btcMexico" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/btc-business-travel-consulting/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+            <button class="btn btcGRANT" data-toggle="modal" data-target="#myModal"></button>
+            <p style="padding-top: 20px;">Copyright &copy; 2018. {{Lang.ddc}} <a href="https://www.btcamericas.com/">BTC Américas</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+            <div class="modal-body">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                       <!-- <div class="item ">
+							<h3>GANADORES DE INSCRIPCIÓN AL CONGRESO</h3><br>
+							<p class="text-center">TERAPIA RESPIRATORIA</p> 
+							<p class="marg2"><i class="fa fa-star marg2"></i> Licenciada Ilsa Cubilla </p> 
+							<p><i class="fa fa-star marg2"></i>Licenciada Lizeth Medina</p> 
+							<p><i class="fa fa-star marg2"></i>Dr. Felix Chung </p> 
+							<p><i class="fa fa-star marg2"></i>Dra. Eivys Villasanta</p>  <br>
+                            <img src="images/ganadores.gif" alt="ganadores">
+                        </div>-->
+                        <div class="item active">
+							<h3>CÓDIGO PROMOCIONAL DE VUELO:<br> AVIANCA</h3>
+							<a href="assets/pdf/E-CARD-ALAT-PANAMa-GN379(1).pdf" target="_blank" class="btnn"><i class="fa fa-download"></i><br>DESCARGALO AQUÍ</a>
+							<div class="btn"></div>
+						</div>
+                    </div><!--
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>-->
+                </div>
+			</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="alert alert-success alert-dismissible" role="alert" id="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <i class="fa fa-exclamation-circle fa-2x"></i>&nbsp; &nbsp; <a href="https://www.eventgo.com.ar/ALAT2019/ProgramaWEB.dll/?e=12&l=ES&d=1" target="_blank"><strong> ¡Ya puedes consultar el programa!</strong></a>
+	</div>
+  <!--PRIVACY start here-->
+  <section id="privacy">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <label><span><i class="fas fa-lock"></i></span><a href="https://privacy.btcamericas.com/" target="_blank">Políticas de Privacidad</a></label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--PRIVACY ends here -->
+
+  <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="row">
+          <div class="modal-body">
+            <div class="col-xs-12">
+				<img src="images/post-Grantbtc-redes-sociales.jpg" class="img-responsive" alt="btc"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal02">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body"> 
+		  <img src="images/popup/ALAT-02.jpg" class="img-responsive" alt="promo ALAT">
+		</div>
+    </div>
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- jQuery --> 
+<script src="assets/js/jquery-3.1.1.min.js"></script> 
+<script src="assets/js/jquery-migrate-1.4.1.min.js"></script> 
+
+<!--Angular.js--> 
+<script src="assets/js/angular.min.js"></script>
+<script src="assets/js/angular-sanitize.min.js"></script>
+<script src="assets/js/Translator.js"></script> 
+
+<!-- Bootstrap --> 
+<script src="assets/js/bootstrap.min.js"></script> 
+
+<!-- Coundown --> 
+<script src="assets/js/jquery.countdown.min.js"></script> 
+
+
+<!--easing--> 
+<script src="assets/js/jquery.easing.min.js"></script> 
+
+<!--Privacy and cookies BTC--> 
+<script src="https://privacy.btcamericas.com/privacy.js" id="privacyJs"></script> 
+
+<!-- Google Map --> 
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJJuNzmXHOEmMhbTvtwxJW4Ri1QwC0AQU"></script> 
+
+<!-- Custom --> 
+<script src="assets/js/custom.js"></script> 
+<script src="js/config.js"></script>
+<script src="js/jsPDF.js"></script> 
+<script src="js/FileSaver.js"></script> 
+<script src="js/jspdf.plugin.addimage.js"></script> 
+<script async src="js/letters.js"></script>
+<script>
+      (function (i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+              (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date(); a = s.createElement(o),
+              m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-103239148-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
